@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="pet5.css" type="text/css" media="all"/>
+        <title>Random Pet Game</title>
+    </head>
+    <body>
+        <div id="container">
+            <div class="form">
+                <img class="" src="Bear.jpg" alt=""/>
+                <br>
+                <h2>You chose a Bear Cub!</h2>
+                <p>Name your pet:</p>
+                <input type="text" id="petName"/>
+                <button id="ok">OK</button>
+                <br>
+                <p id="text"></p>
+                <br>
+                <button id="create">Create Profile</button>
+            </div>
+            <div id="profile">
+                <h3 id="prof"></h3>
+                <h4 id="pname"></h4>
+                <h4 id="page"></h4>
+                <h4 id="ptype"></h4>
+            </div>
+        </div>
+        <script type="text/javascript" charset="utf-8">
+            var button1 = document.getElementById("ok");
+            var button2 = document.getElementById("create");
+            var petName = document.getElementById("petName");
+            var text = document.getElementById("text");
+            var op1 = document.getElementById("pname");
+            var op2 = document.getElementById("page");
+            var op3 = document.getElementById("ptype");
+            var prof = document.getElementById("prof");
+            
+            
+            
+            function check() {
+                if (petName.value.length === 0) {
+                    text.style.color = "red";
+                    text.innerHTML = "Input field is empty!";
+                }
+                else {
+                    text.style.color = "green";
+                    text.innerHTML = `Your pet's name is ${petName.value}`;
+                }
+            }
+            
+            button1.onclick = check;
+            
+            
+            
+            
+            const petAge = 2.2;
+            const petType = "Bear";
+            
+            
+            function create() {
+                prof.innerHTML = "Pet's Stats:--"
+                op1.innerHTML = `Name: ${petName.value}`;
+                op2.innerHTML = `Age: ${petAge}`;
+                op3.innerHTML = `Type: ${petType}`;
+            }
+            
+            
+            button2.addEventListener("click", create);
+            
+            console.log(window.location);
+        </script>
+    </body>
+</html>

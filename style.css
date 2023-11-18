@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+}
+body {
+    display: block;
+    background: linear-gradient(gainsboro, green);
+}
+h1 {
+    font-size: 45px;
+    text-align: center;
+}
+button {
+    border-radius: 3px;
+    font-size: 15px;
+    width: 120px;
+    background-color: skyblue;
+}
+button:active {
+    background-color: red;
+}
+a {
+    color: violet;
+}
+h3 {
+    font-size: 22px;
+}
+footer {
+    background-color: #333333;
+    color: lightgrey;
+    
+    text-align: center;
+    padding-bottom: 25px;
+}
+.main {
+    background: linear-gradient(green, gainsboro);
+    
+    
+    border: solid 2px darkorange;
+    border-radius: 15px;
+    margin: 0 15px 50px 15px;
+    padding: 15px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.pets {
+    border-radius: 50px 50px;
+    border: 4px solid hotpink;
+}
+.call {
+    margin-left: 7px;
+    margin-right: 24px;
+}
+.sub {
+    align-self: center;
+    text-align: center;
+}
+.text {
+    text-align: center;
+    font-size: 15px;
+    padding: 1px;
+    font-family: cursive;
+    font-weight: bold;
+}
+.left {
+    margin-right: 10px;
+}
+.tinz {
+    padding: 8px 12px;
+    margin-bottom: 5px;
+}
+#header {
+    color: #0d3d0d;
+}
+#intro {
+    text-align: center;
+    
+    margin: 16px 0;
+    
+    color: brown;
+}
+#collection {
+    margin-bottom: 12px;
+    
+    color: darkgrey;
+    
+    text-align: center;
+}
+#logo {
+    height: 100px;
+    width: 100px;
+    border: solid 3px #252525;
+    border-radius: 50px;
+    margin-bottom: 7px;
+}
+#note {
+    color: red;
+    
+    font-family: Times New Roman;
+    font-style: italic;
+}
+#myLink {
+    margin-bottom: 18px;
+}
